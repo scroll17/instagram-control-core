@@ -15,6 +15,10 @@ declare module '@custom/types' {
         export type MakeOptional<T, K extends string | number | symbol> = Omit<T, K> & Partial<T>;
         export type MakeRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>;
 
+        export type MakeOptionalDeep<T> = {
+            [TKey in keyof T]?: T[TKey] extends Record ? MakeOptionalDeep<T[TKey]> : T[TKey]
+        }
+
         export type MakeNilAll<T extends object> = {
             [TKey in keyof T]?: T[TKey] | null;
         };
