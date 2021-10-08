@@ -1,0 +1,29 @@
+{
+  "name": "instagram-control-core",
+  "version": "1.0.0",
+  "description": "Instagram control core",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scroll17/instagram-control-core.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scroll17/instagram-control-core/issues"
+  },
+  "homepage": "https://github.com/scroll17/instagram-control-core#readme",
+  "dependencies": {
+    "instagram-web-api": "^2.2.2",
+    "lodash": "^4.17.20",
+    "ts-node": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.161",
+    "@types/node": "^16.7.8",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "<3.8.0"
+  }
+}
