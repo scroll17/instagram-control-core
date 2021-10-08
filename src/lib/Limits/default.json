@@ -1,0 +1,27 @@
+{
+  "stories": {
+    "day": [30, 40]
+  },
+  "likes": {
+    "hour": 20,
+    "day": [300, 500]
+  },
+  "follows": {
+    "hour": 20,
+    "day": [300, 500]
+  },
+  "unfollows": {
+    "interval": {
+      "dimension": "seconds",
+      "value": [40, 60]
+    },
+    "day": {
+      "mutual": 1000,
+      "nonreciprocal": 1000,
+      "break:mutual+nonreciprocal": {
+        "dimension": "hours",
+        "value": 15
+      }
+    }
+  }
+}
