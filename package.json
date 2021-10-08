@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Instagram control core",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "NODE_ENV=development ts-node-dev --respawn --transpile-only src/index.ts",
+    "watch": "NODE_ENV=development ts-node-dev --respawn --transpile-only"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scroll17/instagram-control-core.git"
